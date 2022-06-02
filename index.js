@@ -15,20 +15,16 @@ const dataFilename = "data.json";
 let rawData = fs.readFileSync(dataFilename);
 let dataFile = JSON.parse(rawData);
 
-const sendMessage = async (title, description, fields) => {
-  const embeds = [{ title, description, fields }];
-
+const sendMessage = async (content) => {
   if (debug) {
-    console.log("title", title);
-    console.log("description", description);
-    console.log("fields", fields);
-    console.log("embeds", embeds);
+    console.log("content");
+    console.log(content);
   } else {
     for (const discordURL of discordURLs) {
       await axios({
         method: "post",
         url: discordURL,
-        data: { embeds },
+        data: { content },
       });
     }
   }
@@ -47,18 +43,13 @@ const main = async () => {
     dataFile.id = id;
     fs.writeFileSync(dataFilename, JSON.stringify(dataFile));
 
-    const title = `LukeYui/EldenRingSeamlessCoopRelease ${name}`;
     const published_date = dayjs(published_at).format(
       "DD MMM YYYY HH:mm:ss ([GMT]ZZ)"
     );
-    const fields = [
-      { name: "url", value: assets[0].browser_download_url },
-      {
-        name: "published_at",
-        value: published_date,
-      },
-    ];
-    await sendMessage(title, body, fields);
+    const title = `LukeYui/EldenRingSeamlessCoopRelease - ${name} - ${published_date}`;
+    const url = assets[0].browser_download_url;
+    const content = title + "\n" + body + "\n" + url;
+    await sendMessage(content);
   }
 };
 
