@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const debug = true;
+const debug = false;
 const githubURL =
   "https://api.github.com/repos/LukeYui/EldenRingSeamlessCoopRelease/releases";
 
@@ -24,7 +24,7 @@ const sendMessage = async (content) => {
     console.log(content);
   } else {
     for (const discordURL of discordURLs) {
-      await axios({
+      const response = await axios({
         method: "post",
         url: discordURL,
         data: {
