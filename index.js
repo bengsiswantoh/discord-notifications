@@ -49,8 +49,7 @@ const main = async () => {
     fs.writeFileSync(dataFilename, JSON.stringify(dataFile));
 
     let content = `New release: ${name} (${created_at})\n${body}\n${assets[0].browser_download_url}`;
-    // await sendMessage(content);
-    console.log(content);
+    await sendMessage(content);
   }
 };
 
