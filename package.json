@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "elden-ring": "node main/elden-ring.js"
+    "hourly": "node main/hourly.js"
   },
   "author": "",
   "license": "ISC",

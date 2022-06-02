@@ -25,8 +25,8 @@ jobs:
           cache: "npm"
       - name: install libraries
         run: npm install
-      - name: run elden ring
-        run: npm run elden-ring
+      - name: run hourly
+        run: npm run hourly
       - name: Commit and push if changed
         run: |
           git add .
