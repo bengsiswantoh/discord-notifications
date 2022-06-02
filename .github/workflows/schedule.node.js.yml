@@ -26,7 +26,7 @@ jobs:
       - name: install libraries
         run: npm install
       - name: run code
-        run: npm start ${{ secrets.MY_DISCORD }}
+        run: npm start ${{ secrets.MY_DISCORD }} ${{ secrets.MY_DISCORD_YOUTUBE }}
       - name: Commit and push if changed
         run: |
           git add .
