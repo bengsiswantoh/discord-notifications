@@ -46,9 +46,10 @@ const main = async () => {
     const published_date = dayjs(published_at).format(
       "DD MMM YYYY HH:mm:ss ([GMT]ZZ)"
     );
-    const title = `LukeYui/EldenRingSeamlessCoopRelease - ${name} - ${published_date}`;
+    const title = `LukeYui/EldenRingSeamlessCoopRelease - ${name}`;
     const url = assets[0].browser_download_url;
-    const content = title + "\n" + body + "\n" + url;
+    const content =
+      title + "\n\n" + published_date + "\n\n" + body + "\n\n" + url;
     await sendMessage(content);
   }
 };
