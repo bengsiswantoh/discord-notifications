@@ -9,7 +9,9 @@ on:
 
 env:
   NODE_ENV: ${{ secrets.NODE_ENV }}
+  DISCORD_ERROR: ${{ secrets.DISCORD_ERROR }}
   DISCORD_ELDEN_RING: ${{ secrets.DISCORD_ELDEN_RING }}
+  DISCORD_EPIC_GAMES: ${{ secrets.DISCORD_EPIC_GAMES }}
 
 jobs:
   build:
