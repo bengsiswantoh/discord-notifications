@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [master]
 
+env:
+  NODE_ENV: ${{ secrets.NODE_ENV }}
+  DISCORD_ELDEN_RING: ${{ secrets.DISCORD_ELDEN_RING }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
       - name: install libraries
         run: npm install
       - name: run code
-        run: npm start ${{ secrets.MY_DISCORD }}
+        run: npm run hourly
       - name: Commit and push if changed
         run: |
           git add .
