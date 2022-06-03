@@ -1,7 +1,3 @@
-const eldenRing = require("../lib/elden-ring");
-
-const main = async () => {
-  await eldenRing();
-};
+const main = async () => {};
 
 main();
