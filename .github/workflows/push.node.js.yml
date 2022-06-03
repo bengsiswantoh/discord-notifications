@@ -32,7 +32,7 @@ jobs:
       - name: install libraries
         run: npm install
       - name: run code
-        run: npm run hourly
+        run: npm run test
       - name: Commit and push if changed
         run: |
           git add .
