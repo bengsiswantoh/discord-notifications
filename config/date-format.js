@@ -1,4 +1,4 @@
 module.exports = {
-  displayWithGMT: "DD MMM YYYY HH:mm:ss ([GMT]ZZ)",
+  displayWithGMT: "ddd, DD MMM YYYY HH:mm ([UTC]ZZ)",
   timezone: "Asia/Jakarta",
 };
