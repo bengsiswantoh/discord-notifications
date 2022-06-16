@@ -12,14 +12,14 @@ const main = async () => {
     await eldenRing();
   } catch (err) {
     console.log(err);
-    sendContents(err.message, urls);
+    sendContents("elden ring error\n" + err.message, urls);
   }
 
   try {
     await epicGames();
   } catch (err) {
     console.log(err);
-    sendContents(err.message, urls);
+    sendContents("epic games error\n" + err.message, urls);
   }
 };
 
