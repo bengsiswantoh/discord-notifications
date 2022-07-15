@@ -9,8 +9,9 @@ const tryCatch = async (functionParam) => {
     const data = await functionParam();
     return [data, null];
   } catch (error) {
-    const message = `${functionParam.name}\n${error}`;
-    console.log(message);
+    console.log(`${functionParam.name}\n${error}`);
+
+    const message = `${functionParam.name}\n${error.toString()}`;
     await sendContents(message, urls);
     return [null, error];
   }
