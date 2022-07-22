@@ -10,15 +10,29 @@ const sendContents = async (content, urls) => {
     console.log(content);
   } else {
     for (const url of urls) {
-      await axios({
-        url,
-        method: "post",
-        data: { content },
-      });
+      try {
+        await axios({
+          url,
+          method: "post",
+          data: { content },
+        });
+      } catch (err) {
+        console.log(err);
+      }
     }
   }
 };
 
+const sendAlert = async (error) => {
+  const urls = process.env.DISCORD_ERROR.split(",");
+
+  console.log(error);
+  await sendContents(error.stack.toString(), urls);
+
+  return error;
+};
+
 module.exports = {
   sendContents,
+  sendAlert,
 };
