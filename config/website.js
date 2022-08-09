@@ -13,6 +13,7 @@ module.exports = {
   },
   humbleBundle: {
     source: "https://www.humblebundle.com/bundles",
-    generate: "https://www.humblebundle.com",
+    generateStart: "https://www.humblebundle.com",
+    generateEnd: "?partner=bengsiswantoh",
   },
 };
