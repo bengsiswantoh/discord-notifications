@@ -11,4 +11,8 @@ module.exports = {
       "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=ID&allowCountries=ID",
     generate: "https://store.epicgames.com/en-US/p/",
   },
+  humbleBundle: {
+    source: "https://www.humblebundle.com/bundles",
+    generate: "https://www.humblebundle.com",
+  },
 };

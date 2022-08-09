@@ -2,6 +2,10 @@ require("dotenv").config();
 const axios = require("axios");
 
 const sendContents = async (content, urls) => {
+  if (!content || !urls) {
+    return;
+  }
+
   const env = process.env.NODE_ENV || "development";
 
   if (env === "development") {
