@@ -16,4 +16,7 @@ module.exports = {
     generateStart: "https://www.humblebundle.com",
     generateEnd: "?partner=bengsiswantoh",
   },
+  fanatical: {
+    source: "https://www.fanatical.com/api/algolia/bundles?altRank=false",
+  },
 };
