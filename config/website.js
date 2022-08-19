@@ -1,22 +1,23 @@
 module.exports = {
   eldenRing: {
     source:
-      "https://api.github.com/repos/LukeYui/EldenRingSeamlessCoopRelease/releases",
+      'https://api.github.com/repos/LukeYui/EldenRingSeamlessCoopRelease/releases',
   },
   openhabAndroid: {
-    source: "https://api.github.com/repos/openhab/openhab-android/releases",
+    source: 'https://api.github.com/repos/openhab/openhab-android/releases',
   },
   epicGames: {
     source:
-      "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=ID&allowCountries=ID",
-    generate: "https://store.epicgames.com/en-US/p/",
+      'https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=ID&allowCountries=ID',
+    generate: 'https://store.epicgames.com/en-US/p/',
   },
   humbleBundle: {
-    source: "https://www.humblebundle.com/bundles",
-    generateStart: "https://www.humblebundle.com",
-    generateEnd: "?partner=bengsiswantoh",
+    source: 'https://www.humblebundle.com/bundles',
+    generateStart: 'https://www.humblebundle.com',
+    generateEnd: '?partner=bengsiswantoh',
   },
   fanatical: {
-    source: "https://www.fanatical.com/api/algolia/bundles?altRank=false",
+    source: 'https://www.fanatical.com/api/algolia/bundles?altRank=false',
+    generate: 'https://www.fanatical.com/en/bundle/',
   },
 };
