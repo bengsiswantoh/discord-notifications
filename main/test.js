@@ -6,10 +6,10 @@ const fanatical = require('../lib/fanatical');
 
 const main = async () => {
   // eldenRing();
-  // epicGames();
+  epicGames();
   // openhabAndroid();
   // humbleBundle();
-  fanatical();
+  // fanatical();
 };
 
 main();
