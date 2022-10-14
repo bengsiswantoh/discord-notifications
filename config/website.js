@@ -20,4 +20,8 @@ module.exports = {
     source: 'https://www.fanatical.com/api/algolia/bundles?altRank=false',
     generate: 'https://www.fanatical.com/en/bundle/',
   },
+  makmur: {
+    source:
+      'https://api.makmur.id/graphql/blogs/public?query={blogPosts(featured:true){_id,url,title,image,publishedAt,blogCategory{name,code,}}}',
+  },
 };
