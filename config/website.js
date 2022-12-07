@@ -21,7 +21,7 @@ module.exports = {
     generate: 'https://www.fanatical.com/en/bundle/',
   },
   makmur: {
-    source:
-      'https://api.makmur.id/graphql/blogs/public?query={blogPosts(featured:true){_id,url,title,image,publishedAt,blogCategory{name,code,}}}',
+    source: 'https://blog.makmur.id/category/promo/',
+    generate: 'https://blog.makmur.id',
   },
 };
