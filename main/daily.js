@@ -1,13 +1,15 @@
-const eldenRing = require("../lib/elden-ring");
-const epicGames = require("../lib/epic-games");
-const openhabAndroid = require("../lib/openhab-android");
-const humbleBundle = require("../lib/humble-bundle");
+const eldenRing = require('../lib/elden-ring');
+const epicGames = require('../lib/epic-games');
+const humbleBundle = require('../lib/humble-bundle');
+const makmur = require('../lib/makmur');
+const openhabAndroid = require('../lib/openhab-android');
 
 const main = async () => {
   eldenRing();
   epicGames();
-  openhabAndroid();
   humbleBundle();
+  makmur();
+  openhabAndroid();
 };
 
 main();

@@ -4,4 +4,5 @@ module.exports = {
   openhabAndroid: 'data/openhab-android.json',
   humbleBundle: 'data/humble-bundle.json',
   fanatical: 'data/fanatical.json',
+  makmur: 'data/makmur.json',
 };
