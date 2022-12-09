@@ -7,10 +7,10 @@ const openhabAndroid = require('../lib/openhab-android');
 
 const main = async () => {
   // eldenRing();
-  // epicGames();
+  epicGames();
   // fanatical();
-  // humbleBundle();
-  makmur();
+  humbleBundle();
+  // makmur();
   // openhabAndroid();
 };
 
