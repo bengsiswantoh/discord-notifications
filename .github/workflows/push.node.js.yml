@@ -10,12 +10,13 @@ on:
     branches: [master]
 
 env:
-  NODE_ENV: ${{ secrets.NODE_ENV }}
-  DISCORD_ERROR: ${{ secrets.DISCORD_ERROR }}
   DISCORD_ELDEN_RING: ${{ secrets.DISCORD_ELDEN_RING }}
   DISCORD_EPIC_GAMES: ${{ secrets.DISCORD_EPIC_GAMES }}
-  DISCORD_OPENHAB: ${{ secrets.DISCORD_OPENHAB }}
+  DISCORD_ERROR: ${{ secrets.DISCORD_ERROR }}
   DISCORD_HUMBLE_BUNDLE: ${{ secrets.DISCORD_HUMBLE_BUNDLE }}
+  DISCORD_MAKMUR: ${{ secrets.DISCORD_MAKMUR }}
+  DISCORD_OPENHAB: ${{ secrets.DISCORD_OPENHAB }}
+  NODE_ENV: ${{ secrets.NODE_ENV }}
 
 jobs:
   build:
