@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const sendContents = async (content, urls) => {
+const sendDiscordContents = async (content, urls) => {
   if (!content || !urls) {
     return;
   }
@@ -32,12 +32,12 @@ const sendAlert = async (error) => {
   const urls = process.env.DISCORD_ERROR.split(',');
 
   console.log(error);
-  await sendContents(error.stack.toString(), urls);
+  await sendDiscordContents(error.stack.toString(), urls);
 
   return error;
 };
 
 module.exports = {
-  sendContents,
+  sendDiscordContents,
   sendAlert,
 };
