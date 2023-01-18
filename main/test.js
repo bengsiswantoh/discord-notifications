@@ -3,7 +3,7 @@ const epicGames = require('../lib/epic-games');
 const fanatical = require('../lib/fanatical');
 const humbleBundle = require('../lib/humble-bundle');
 const makmur = require('../lib/makmur');
-const openhabAndroid = require('../lib/openhab-android');
+const openhab = require('../lib/openhab');
 
 const main = async () => {
   // eldenRing();
@@ -11,7 +11,7 @@ const main = async () => {
   // fanatical();
   // humbleBundle();
   // makmur();
-  // openhabAndroid();
+  openhab();
 };
 
 main();
