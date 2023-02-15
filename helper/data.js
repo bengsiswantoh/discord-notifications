@@ -1,6 +1,6 @@
-require("dotenv").config();
-const fs = require("fs");
-const { sendAlert } = require("./discord");
+require('dotenv').config();
+const fs = require('fs');
+const { sendAlert } = require('./discord');
 
 const readJSONFile = async (filename, defaultValue = {}) => {
   let result;
@@ -20,12 +20,14 @@ const readJSONFile = async (filename, defaultValue = {}) => {
   return [result, error];
 };
 
-const writeFile = async (filename, data) => {
+const writeFile = async (filename, data, isJSON = true) => {
   let result;
   let error;
 
   try {
-    fs.writeFileSync(filename, JSON.stringify(data));
+    data = isJSON ? JSON.stringify(data) : data;
+
+    fs.writeFileSync(filename, data);
     result = filename;
   } catch (err) {
     error = await sendAlert(err);
