@@ -5,9 +5,10 @@ name: daily
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 22 * * *'
 
 env:
+  DISCORD_BAREKSA: ${{ secrets.DISCORD_BAREKSA }}
   DISCORD_ELDEN_RING: ${{ secrets.DISCORD_ELDEN_RING }}
   DISCORD_EPIC_GAMES: ${{ secrets.DISCORD_EPIC_GAMES }}
   DISCORD_ERROR: ${{ secrets.DISCORD_ERROR }}

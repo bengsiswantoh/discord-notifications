@@ -10,6 +10,7 @@ on:
     branches: [master]
 
 env:
+  DISCORD_BAREKSA: ${{ secrets.DISCORD_BAREKSA }}
   DISCORD_ELDEN_RING: ${{ secrets.DISCORD_ELDEN_RING }}
   DISCORD_EPIC_GAMES: ${{ secrets.DISCORD_EPIC_GAMES }}
   DISCORD_ERROR: ${{ secrets.DISCORD_ERROR }}

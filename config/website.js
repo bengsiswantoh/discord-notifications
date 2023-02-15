@@ -1,4 +1,5 @@
 module.exports = {
+  bareksa: { source: 'https://www.bareksa.com/berita/promo' },
   eldenRing: {
     source:
       'https://api.github.com/repos/LukeYui/EldenRingSeamlessCoopRelease/releases',
