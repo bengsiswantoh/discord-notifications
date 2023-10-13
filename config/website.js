@@ -13,6 +13,9 @@ module.exports = {
     source: 'https://www.fanatical.com/api/algolia/bundles?altRank=false',
     generate: 'https://www.fanatical.com/en/bundle/',
   },
+  godotFBX: {
+    source: 'https://api.github.com/repos/godotengine/FBX2glTF/releases',
+  },
   humbleBundle: {
     source: 'https://www.humblebundle.com/bundles',
     generateStart: 'https://www.humblebundle.com',
