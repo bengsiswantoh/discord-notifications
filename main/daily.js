@@ -10,7 +10,7 @@ const main = async () => {
   epicGames();
   humbleBundle();
   godotFBX();
-  // makmur();
+  makmur();
   openhab();
 };
 

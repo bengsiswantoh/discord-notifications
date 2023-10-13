@@ -22,8 +22,8 @@ module.exports = {
     generateEnd: '?partner=bengsiswantoh',
   },
   makmur: {
-    source: 'https://blog.makmur.id/category/promo/',
-    generate: 'https://blog.makmur.id',
+    source: 'https://www.makmur.id/id/blog/promo',
+    generate: 'https://www.makmur.id',
   },
   openhabAndroid: {
     source: 'https://api.github.com/repos/openhab/openhab-android/releases',
