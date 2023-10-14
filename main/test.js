@@ -6,16 +6,16 @@ const godotFBX = require('../lib/godot-fbx');
 const humbleBundle = require('../lib/humble-bundle');
 const makmur = require('../lib/makmur');
 const openhab = require('../lib/openhab');
-const tokopedia = require('../lib/tokopedia');
+// const tokopedia = require('../lib/tokopedia');
 
 const main = async () => {
   // bareksa();
   // eldenRing();
-  // epicGames();
+  epicGames();
   // fanatical();
   // godotFBX();
   // humbleBundle();
-  makmur();
+  // makmur();
   // openhab();
   // tokopedia();
 };

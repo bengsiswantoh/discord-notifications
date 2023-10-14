@@ -14,7 +14,6 @@
     "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
-    "puppeteer": "^21.3.8",
     "turndown": "^7.1.2"
   }
 }
