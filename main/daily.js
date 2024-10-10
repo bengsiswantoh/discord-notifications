@@ -6,12 +6,8 @@ const makmur = require('../lib/makmur');
 const openhab = require('../lib/openhab');
 
 const main = async () => {
-  eldenRing();
   epicGames();
   humbleBundle();
-  godotFBX();
-  makmur();
-  openhab();
 };
 
 main();

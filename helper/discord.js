@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const formatTimestamp = (value) => '<t:' + value + ':F>';
+
 const sendDiscordContents = async (content, urls) => {
   if (!content || !urls) {
     return;
@@ -38,6 +40,7 @@ const sendAlert = async (error) => {
 };
 
 module.exports = {
+  formatTimestamp,
   sendDiscordContents,
   sendAlert,
 };
