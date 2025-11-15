@@ -6,7 +6,7 @@ const makmur = require('../lib/makmur');
 const openhab = require('../lib/openhab');
 
 const main = async () => {
-  epicGames();
+  // epicGames();
   humbleBundle();
 };
 
